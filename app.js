@@ -25,8 +25,10 @@ app.use('/api/questions', auth, questionsRoutes);
 
 // 3 answer route middleware
 // answer routes middleware file
-const answerRoute=require('./routes/answerRoute')
+const answerRoute=require('./routes/answers.routes')
 app.use("/api/answer", auth, answerRoute);
+
+
 
 
 

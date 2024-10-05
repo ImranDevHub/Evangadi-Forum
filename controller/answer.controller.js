@@ -18,7 +18,7 @@ const addAnswer = async (req, res) => {
       .json({ msg: "Something went wrong, please try again" });
   }
 };
-
+// get answers endpoint
 async function getAnswers(req, res) {
   try {
     console.log(req);
