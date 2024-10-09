@@ -26,7 +26,6 @@ form {
 .answer_description::placeholder {
     color: #c7c7c7;
 }
-
 .answer_button {
     width: 120px;
     margin-top: 10px;
@@ -44,6 +43,6 @@ form {
 }
 
 .post-answer-success {
-    margin-top: 10px;
+    margin-top: 15px;
     color: green;
 }
