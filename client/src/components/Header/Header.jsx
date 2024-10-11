@@ -18,7 +18,7 @@ const Header = () => {
     if (isLoggedIn) {
       // If the user is logged in, handle logout
       setUser(null); // Clear user context or state
-      navigate("/"); // Navigate to home page after logout
+      navigate("/login"); // Navigate to login page after logout
     } else {
       // If the user is not logged in, navigate to the register page
       navigate("/register");
@@ -27,11 +27,11 @@ const Header = () => {
 
   return (
     <Navbar
-      
       bg="white"
       expand="lg"
       sticky="top"
-      className="shadow-sm border-bottom py-4">
+      className="shadow-sm border-bottom py-4"
+    >
       <Container>
         <Navbar.Brand as={Link} to="/">
           <img src={logo} alt="logo" style={{ width: "170px" }} />
@@ -45,7 +45,10 @@ const Header = () => {
             <Nav.Link as={Link} to="/">
               How it Works
             </Nav.Link>
-            <button className="btn btn-primary px-5" onClick={handleButtonClick}>
+            <button
+              className="btn btn-primary px-5"
+              onClick={handleButtonClick}
+            >
               {isLoggedIn ? "Logout" : "Sign In"}
             </button>
           </Nav>
